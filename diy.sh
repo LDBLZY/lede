@@ -10,9 +10,20 @@
 # Description: OpenWrt DIY script (After Update feeds)
 #
 
+# Add luci-app-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+
+# Add luci-app-ssr-plus
+git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
+
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
 
+# Add luci-app-vssr
+cd ./package/lean/
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
 cd $OLDPWD
 
 # Add luci-app-netdata
@@ -47,7 +58,7 @@ popd
 sed -i 's/luci-theme-bootstrap/luci-theme-neobird/' feeds/luci/collections/luci/Makefile
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # Clear the login password
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
