@@ -34,6 +34,9 @@ git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git package/l
 # Add luci-app-poweroff
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
 
+# Add luci-app-autotimeset
+git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./package/lean/luci-app-autotimeset
+
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files
 sed -i '/http/d' zzz-default-settings
