@@ -10,20 +10,10 @@
 # Description: OpenWrt DIY script (After Update feeds)
 #
 
-# Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
-
-# Add luci-app-ssr-plus
-git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
 
-# Add luci-app-vssr
-cd ./package/lean/
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
 cd $OLDPWD
 
 # Add luci-app-netdata
