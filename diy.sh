@@ -27,10 +27,6 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git packa
 # Add luci-theme-neobird
 git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git package/lean/luci-theme-neobird
 
-# Mod default theme
-# sed -i 's/luci-theme-bootstrap/luci-theme-neobird/g' ./feeds/luci/collections/luci/Makefile
-# sed -i 's/luci-theme-bootstrap/luci-theme-neobird/g' ./feeds/luci/collections/luci-nginx/Makefile
-
 # Add luci-app-poweroff
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
 
@@ -50,6 +46,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-neobird/' feeds/luci/collections/luci/
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
+
 
 # Clear the login password
 sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
