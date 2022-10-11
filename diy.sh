@@ -37,9 +37,13 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./packa
 pushd package/lean/default-settings/files
 sed -i '/http/d' zzz-default-settings
 sed -i '/18.06/d' zzz-default-settings
-export orig_version=$(cat "zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
-# sed -i "s/${orig_version}/Firmware compiled by Maverick/g" zzz-default-settings
-sed -i "s/${steps.tag.outputs.release_date}/Firmware compiled by Maverick/g" zzz-default-settings
+# export orig_version=$(cat "zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
+# sed -i "s/${steps.tag.outputs.release_date}/Firmware compiled by Maverick/g" zzz-default-settings
+
+date_version=$(date +"%Y.%m.%d")
+orig_version=$(echo "$(cat zzz-default-settings)" | grep -Po "DISTRIB_REVISION=\'\K[^\']*")
+sed -i "s/${orig_version}/R${date_version} by LDB/g" zzz-default-settings
+
 popd
 
 # Change default theme luci-theme-neobird
