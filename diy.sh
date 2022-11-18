@@ -47,7 +47,7 @@ sed -i "s/${orig_version}/R${date_version} by LDB/g" zzz-default-settings
 popd
 
 # Change default theme luci-theme-neobird
-sed -i 's/luci-theme-bootstrap/luci-theme-neobird/' feeds/luci/collections/luci/Makefile
+# sed -i 's/luci-theme-bootstrap/luci-theme-neobird/' feeds/luci/collections/luci/Makefile
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
