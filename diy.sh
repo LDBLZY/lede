@@ -14,9 +14,9 @@
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
 
-Add luci-app-netdata
-rm -rf feeds/luci/applications/luci-app-netdata
-git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata.git ./package/lean/luci-app-netdata
+# Add luci-app-netdata
+# rm -rf feeds/luci/applications/luci-app-netdata
+# git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata.git ./package/lean/luci-app-netdata
 
 # Add luci-theme-argon
 rm -rf feeds/luci/themes/luci-theme-argon
