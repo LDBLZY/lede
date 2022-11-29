@@ -12,7 +12,7 @@
 
 
 # Add OpenClash
-# git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
 
 # Add luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-netdata
