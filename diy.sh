@@ -25,10 +25,10 @@ rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
 # Add luci-theme-neobird
-git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git package/lean/luci-theme-neobird
+# git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git package/lean/luci-theme-neobird
 
 # Add luci-app-poweroff
-git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
+# git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
 
 # Add luci-app-autotimeset
 git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./package/lean/luci-app-autotimeset
@@ -47,7 +47,7 @@ sed -i "s/${orig_version}/R${date_version} by LDB/g" zzz-default-settings
 popd
 
 # Change default theme luci-theme-neobird
-sed -i 's/luci-theme-bootstrap/luci-theme-neobird/' feeds/luci/collections/luci/Makefile
+# sed -i 's/luci-theme-bootstrap/luci-theme-neobird/' feeds/luci/collections/luci/Makefile
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
