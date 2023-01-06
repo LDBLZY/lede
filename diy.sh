@@ -21,7 +21,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
 
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 ./package/lean/openwrt-passwall2
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall2 ./package/lean/openwrt-passwall2
+svn co https://github.com/xiaorouji/openwrt-passwall2/branches/luci/luci-app-passwall2 ./package/lean/openwrt-passwall2
 
 # Add luci-app-vssr
 cd ./package/lean/
