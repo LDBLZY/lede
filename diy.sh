@@ -17,12 +17,12 @@
 git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
 # Add luci-app-passwall
-# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-# svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
-git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall ./package/lean/openwrt-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+# git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall ./package/lean/openwrt-passwall
 
 # Add luci-app-passwall2
-git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
+# git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
 
 # Add luci-app-vssr
 cd ./package/lean/
@@ -33,7 +33,7 @@ cd $OLDPWD
 # Add luci-app-netdata
 # rm -rf feeds/luci/applications/luci-app-netdata
 # git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata.git ./package/lean/luci-app-netdata
-git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-netdata ./package/lean/luci-app-netdata
+# git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-netdata ./package/lean/luci-app-netdata
 
 # Add luci-theme-argon
 rm -rf feeds/luci/themes/luci-theme-argon
@@ -53,7 +53,7 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./packa
 # Add luci-app-istorex
 # git clone --depth=1 https://github.com/haiibo/openwrt-packages/tree/master/luci-app-istorex ./package/lean/luci-app-istorex
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-istorex ./package/lean/luci-app-istorex
-git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-istorex ./package/lean/luci-app-istorex
+# git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-istorex ./package/lean/luci-app-istorex
 
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files
