@@ -48,6 +48,11 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git packa
 # Add luci-app-autotimeset
 git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./package/lean/luci-app-autotimeset
 
+# Add luci-app-istorex
+# git clone --depth=1 https://github.com/haiibo/openwrt-packages/tree/master/luci-app-istorex ./package/lean/luci-app-istorex
+# git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-istorex ./package/lean/luci-app-istorex
+git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-istorex ./package/lean/luci-app-istorex
+
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files
 sed -i '/http/d' zzz-default-settings
