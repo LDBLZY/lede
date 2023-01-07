@@ -13,15 +13,16 @@
 # Add OpenClash
 # git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
 
-Add luci-app-ssr-plus
+# Add luci-app-ssr-plus
 git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
-Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+# Add luci-app-passwall
+# git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
+# svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall ./package/lean/openwrt-passwall
 
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 ./package/lean/openwrt-passwall2
-#svn co https://github.com/xiaorouji/openwrt-passwall2/branches/luci/luci-app-passwall2 ./package/lean/openwrt-passwall2
+# Add luci-app-passwall2
+git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
 
 # Add luci-app-vssr
 cd ./package/lean/
@@ -32,6 +33,7 @@ cd $OLDPWD
 # Add luci-app-netdata
 # rm -rf feeds/luci/applications/luci-app-netdata
 # git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata.git ./package/lean/luci-app-netdata
+git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-netdata ./package/lean/luci-app-netdata
 
 # Add luci-theme-argon
 rm -rf feeds/luci/themes/luci-theme-argon
