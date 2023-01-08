@@ -30,6 +30,11 @@ git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
 cd $OLDPWD
 
+# Add small-package
+cd ./package/lean/
+git clone https://github.com/kenzok8/small-package
+cd $OLDPWD
+
 # Add luci-app-netdata
 # rm -rf feeds/luci/applications/luci-app-netdata
 # git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata.git ./package/lean/luci-app-netdata
