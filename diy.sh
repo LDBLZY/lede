@@ -53,8 +53,6 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./packa
 git clone https://github.com/linkease/istore.git package/istore
 git clone https://github.com/linkease/istore-ui.git package/istore-ui
 
-git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
-
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files
 sed -i '/http/d' zzz-default-settings
