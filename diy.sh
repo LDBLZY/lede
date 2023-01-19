@@ -50,10 +50,10 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git packa
 # Add luci-app-autotimeset
 git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./package/lean/luci-app-autotimeset
 
-# Add luci-app-istorex
-# git clone --depth=1 https://github.com/haiibo/openwrt-packages/tree/master/luci-app-istorex ./package/lean/luci-app-istorex
-# git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-istorex ./package/lean/luci-app-istorex
-# git clone --depth=1 https://github.com/kenzok8/small-package/tree/main/luci-app-istorex ./package/lean/luci-app-istorex
+git clone https://github.com/linkease/istore.git package/istore
+git clone https://github.com/linkease/istore-ui.git package/istore-ui
+
+git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
 
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files
