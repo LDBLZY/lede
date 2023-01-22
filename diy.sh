@@ -24,6 +24,13 @@ svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-pass
 # Add luci-app-passwall2
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
 
+# Add luci-app-dockerman
+rm -rf ../../customfeeds/luci/collections/luci-lib-docker
+rm -rf ../../customfeeds/luci/applications/luci-app-docker
+rm -rf ../../customfeeds/luci/applications/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+
 # Add luci-app-vssr
 cd ./package/lean/
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
