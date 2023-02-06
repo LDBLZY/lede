@@ -18,8 +18,8 @@ rm -rf ./package/lean/helloworld
 git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
 # Add luci-app-passwall
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-#svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
 
 # Add luci-app-passwall2
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
