@@ -14,27 +14,27 @@
 # git clone --depth=1 -b master https://github.com/vernesong/OpenClash ./package/lean/luci-app-openclash
 
 # Add luci-app-ssr-plus
-#git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
 # Add luci-app-passwall
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-#svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
 
 # Add luci-app-passwall2
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
 
 # Add luci-app-dockerman
-#rm -rf ../../customfeeds/luci/collections/luci-lib-docker
-#rm -rf ../../customfeeds/luci/applications/luci-app-docker
-#rm -rf ../../customfeeds/luci/applications/luci-app-dockerman
-#git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
-#git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+rm -rf ../../customfeeds/luci/collections/luci-lib-docker
+rm -rf ../../customfeeds/luci/applications/luci-app-docker
+rm -rf ../../customfeeds/luci/applications/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
 # Add luci-app-vssr
-#cd ./package/lean/
-#git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-#git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
-#cd $OLDPWD
+cd ./package/lean/
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
+cd $OLDPWD
 
 # Add luci-app-netdata
 # rm -rf feeds/luci/applications/luci-app-netdata
@@ -42,10 +42,10 @@
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-netdata ./package/lean/luci-app-netdata
 
 # Add luci-theme-argon
-#rm -rf feeds/luci/themes/luci-theme-argon
-#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-#rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
-#git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+rm -rf feeds/luci/themes/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+rm -rf package/luci-theme-argon/README* package/luci-theme-argon/Screenshots/
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
 # Add luci-theme-neobird
 # git clone --depth=1 https://github.com/thinktip/luci-theme-neobird.git package/lean/luci-theme-neobird
@@ -54,7 +54,7 @@
 # git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff ./package/lean/luci-app-poweroff
 
 # Add luci-app-autotimeset
-#git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./package/lean/luci-app-autotimeset
+git clone --depth=1 https://github.com/sirpdboy/luci-app-autotimeset.git ./package/lean/luci-app-autotimeset
 
 # Mod zzz-default-settings
 pushd package/lean/default-settings/files
