@@ -20,9 +20,13 @@ git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/hello
 
 
 # Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-#svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./package/lean/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall ./package/lean/openwrt-passwall
+#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
+#svn co https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall ./package/lean/openwrt-passwall
+
+# 拉取PassWall源码
+git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji/packages
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji/luci
+
 
 # Add luci-app-passwall2
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
