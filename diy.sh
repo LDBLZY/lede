@@ -18,11 +18,6 @@ rm -rf package/helloworld
 git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/helloworld
 
 
-
-# Add luci-app-passwall
-#git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall ./package/lean/openwrt-passwall
-#svn co https://github.com/xiaorouji/openwrt-passwall/tree/luci/luci-app-passwall ./package/lean/openwrt-passwall
-
 # 拉取PassWall源码
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji/packages
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji/luci
@@ -31,6 +26,13 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/xiao
 # Add luci-app-passwall2
 # git clone --depth=1 https://github.com/shidahuilang/openwrt-package/tree/master/luci-app-passwall2 ./package/lean/openwrt-passwall2
 
+# Add luci-app-vssr
+#cd ./package/lean/
+git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git ./package/lean/packages
+git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git ./package/lean/luci
+#cd $OLDPWD
+
+
 # Add luci-app-dockerman
 rm -rf ../../customfeeds/luci/collections/luci-lib-docker
 rm -rf ../../customfeeds/luci/applications/luci-app-docker
@@ -38,11 +40,6 @@ rm -rf ../../customfeeds/luci/applications/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
-# Add luci-app-vssr
-cd ./package/lean/
-git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
-git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git
-cd $OLDPWD
 
 # Add luci-app-netdata
 # rm -rf feeds/luci/applications/luci-app-netdata
