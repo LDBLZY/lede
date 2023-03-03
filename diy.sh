@@ -19,8 +19,8 @@ git clone --depth=1 https://github.com/fw876/helloworld.git ./package/lean/hello
 
 
 # 拉取PassWall源码
-git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji/packages
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji/luci
+git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git ./package/xiaorouji/packages
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git ./package/xiaorouji/luci
 
 
 # Add luci-app-passwall2
